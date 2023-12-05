@@ -6,6 +6,7 @@
     src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
+
   @font-face {
     font-family: 'Poppins';
     font-style: normal;
@@ -33,9 +34,30 @@
 }
 
 .wrp{
-  background-image: url("../Img/Img/background_2.jpg");
-  background-color: #492ba7;
+  
+  min-height: 1800px;
+  width: 100%;
+  background-color: rgb(0, 0, 125);
+  position: relative;
+  display: block;
+  z-index: 0;
 }
+
+.wrp:after{
+  content: "";
+  position: absolute;
+  background-image: url("../Img/background_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+
 
 .book_header {
 width: 100%;
@@ -78,7 +100,7 @@ width: 25em;
   width: 100%;
   height: 1.2em;
   border: 3px solid #ffffff;
-  background-color:#492ba7;
+  background-color: transparent;
   outline: 0;
   font-weight: 300;
   font-size: 1em;
@@ -94,12 +116,23 @@ width: 25em;
   top: 10px;
   left: 10px;
   position: absolute;
-  background-color:#492ba7;
+  background-color:transparent;
+  /* z-index: 1; */
 
 }
 
+.main_form {
+  display: flex;
+  justify-content:  space-between;
+}
+
+.article{
+  width: 60%;
+}
 .title{
   padding-left: 5%;
+  display: block;
+  position: relative;
 }
 .main_title{
   font-weight: 400;
@@ -107,16 +140,57 @@ width: 25em;
 }
 .slogan {
   margin-top: -4%;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 5rem;
 }
 .title:before {
   content: "";
   display: block;
+  position:absolute;
   width: 20px;
   height: 300px;
-  background: #b59f5b;
-  margin-top: 9px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  background: #ff6721;
+
+  margin-top: 2rem;
+  margin-left: -4rem;
+
+}
+
+.main_text {
+  font-weight: 300;
+  font-size: 2rem;
+  width: 75.5rem;
+  padding-left: 5%;
+}
+
+.article_image{
+  
+  position: relative;
+  
+}
+
+.graf_dna {
+  position: absolute;
+  margin-top: 7rem;
+  margin-left: -10%;
+background-image: url("../Img/");
+  background-color: #492ba7;
+  width: 50%;
+  height: 100px;
+
+}
+
+.cross{
+  position: absolute;
+  height: 25rem;
+  margin-top: 10rem;
+  margin-left: 55%;
+}
+
+.data__form{
+
+width: 50%;
+height: 50rem;
+border: 5px solid #ffffff;
+background: #ff6721;
 }
