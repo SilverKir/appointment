@@ -44,7 +44,7 @@ width: 100%;
 
 .container{
   display: flex;
-  padding-top:8.75em;
+  padding-top:8.75rem;
   padding-bottom:8.75em;
   margin: 0 18.75em;;
   justify-content: space-between;
@@ -66,11 +66,15 @@ width: 25em;
   margin-top: 0.2em;
   height: 1em;
   width: 10em;
-  display: flex;
+  /* display: flex; */
+  position: relative;
+
 }
 
 .sidebar-search {
+  position: absolute;
   box-sizing: border-box;
+  padding-left: 60px;
   width: 100%;
   height: 1.2em;
   border: 3px solid #ffffff;
@@ -83,18 +87,36 @@ width: 25em;
 
 .search-button {
   box-sizing: border-box;
-  width: 56px;
+  width: 48px;
   height: 48px;
   border: none;
-  background-color: #b59f5b;
-  background-image: url("../Img/Finder.png");
   cursor: pointer;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 18px 18px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  background-color:#492ba7;
+
 }
 
-.search-button:hover {
-  background-color: black;
+.title{
+  padding-left: 5%;
 }
-
+.main_title{
+  font-weight: 400;
+  font-size: 10rem;
+}
+.slogan {
+  margin-top: -4%;
+  font-weight: 400;
+  font-size: 5rem;
+}
+.title:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 300px;
+  background: #b59f5b;
+  margin-top: 9px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
