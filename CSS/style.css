@@ -17,7 +17,7 @@
   }
 
   body {
-    max-width: 3577px;
+    max-width: 3500px;
     font-family: 'Poppins', Arial, Helvetica, sans-serif ;
     margin: 0;
     color: #ffffff;
@@ -35,7 +35,7 @@
 
 .wrp{
   
-  min-height: 1800px;
+  min-height: 112rem;
   width: 100%;
   background-color: rgb(0, 0, 125);
   position: relative;
@@ -67,13 +67,13 @@ width: 100%;
 .container{
   display: flex;
   padding-top:8.75rem;
-  padding-bottom:8.75em;
-  margin: 0 18.75em;;
+  padding-bottom:8.75rem;
+  margin: 0 18.75rem;;
   justify-content: space-between;
 
 }
 .header-logo{
-width: 25em;
+min-width: 27rem;
 }
 
 .menu-list {
@@ -86,9 +86,8 @@ width: 25em;
  
 .search {
   margin-top: 0.2em;
-  height: 1em;
-  width: 10em;
-  /* display: flex; */
+  height: 1rem;
+  width: 50rem;
   position: relative;
 
 }
@@ -117,26 +116,29 @@ width: 25em;
   left: 10px;
   position: absolute;
   background-color:transparent;
-  /* z-index: 1; */
 
 }
 
 .main_form {
   display: flex;
-  justify-content:  space-between;
+  justify-content: space-between;
+  padding: 3rem;
 }
 
 .article{
   width: 60%;
+  padding-left: 7%;
 }
 .title{
-  padding-left: 5%;
+
   display: block;
   position: relative;
 }
+
 .main_title{
   font-weight: 400;
   font-size: 10rem;
+
 }
 .slogan {
   margin-top: -4%;
@@ -147,8 +149,8 @@ width: 25em;
   content: "";
   display: block;
   position:absolute;
-  width: 20px;
-  height: 300px;
+  width: 1.5rem;
+  height: 25rem;
   background: #ff6721;
 
   margin-top: 2rem;
@@ -171,26 +173,51 @@ width: 25em;
 
 .graf_dna {
   position: absolute;
-  margin-top: 7rem;
-  margin-left: -10%;
-background-image: url("../Img/");
-  background-color: #492ba7;
-  width: 50%;
-  height: 100px;
+  margin-top: 9rem;
+  margin-left: -29%;
+  background-image: url("../Img/Grafic.png");
+  width: 69%;
+  height: 33rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
 .cross{
   position: absolute;
-  height: 25rem;
-  margin-top: 10rem;
-  margin-left: 55%;
+  height: 29rem;
+  margin-top: 12rem;
+  background-image: url("../Img/cross.png");
+  width: 4rem;
+  margin-left: 88%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .data__form{
-
-width: 50%;
-height: 50rem;
+  margin-right: 5%;
+width: 41%;
+height: 94rem;
 border: 5px solid #ffffff;
-background: #ff6721;
+background:transparent;
+margin-bottom: 2%;
+}
+
+
+.cross_1{
+  position: absolute;
+  height: 29rem;
+  margin-top: 1rem;
+  background-image: url("../Img/cross.png");
+  width: 4rem;
+  margin-left: 94%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.data_card {
+  padding: 1%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 1.5em;
 }
