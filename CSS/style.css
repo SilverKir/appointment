@@ -195,7 +195,7 @@ min-width: 27rem;
 }
 
 .data__form{
-  margin-right: 5%;
+margin-right: 5%;
 width: 41%;
 height: 94rem;
 border: 5px solid #ffffff;
@@ -215,9 +215,49 @@ margin-bottom: 2%;
   background-size: cover;
 }
 .data_card {
-  padding: 1%;
+  height: 70%;
+  padding: 2%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  grid-gap: 1.5em;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: 35% 60%;
+  grid-gap: 1rem;
+  
+} 
+
+.form-row{
+  padding: 2rem;
+ grid-column: 1/3;
 }
+
+ .form-hint {
+ display: block;
+ font-size: 3rem;
+ margin-bottom: 1px;
+ }
+
+ .field{
+  box-sizing: border-box;
+  width: 100%;
+  background: transparent;
+  border: 3px solid #ffffff;
+  height: 5rem;
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 300;
+ }
+
+ .card_text {
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: 300;
+  font-size: 2rem;
+ }
+ .submit_button {
+  height: 6rem;
+  background-color: #ff6721;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 4rem;
+  border: none;
+ }
+ 
