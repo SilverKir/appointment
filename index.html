@@ -4,94 +4,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/style.css" media = "screen and (min-width: 1200px)">
-  <link rel="stylesheet" href="CSS/style1200.css" media = "screen and (max-width: 1199px)">
-  
+  <link rel="stylesheet" href="CSS/style.css" media="screen and (min-width: 1200px)">
+  <link rel="stylesheet" href="CSS/style1200.css" media="screen and (max-width: 1199px)">
+
   <title> Book an appointment </title>
 </head>
 
 <body>
   <div class="wrp">
-    <header class="book_header">
-      <div class="container">
-        <img src="Img/Logo.png" class="header-logo" alt="company-logo">
-
-        <nav class="menu">
-          <ul class="menu-list">
-            <li class="menu-list-item">
-              <a class="menu-link" href="#home">Home</a>
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-link" href="#0">Medicine</a>
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-link" href="#0">Professionals</a>
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-link" href="#0">Contact</a>
-            </li>
-          </ul>
-          <form action="https://ya.ru/search/" class="search">
-            <input type="search" required class="sidebar-search" placeholder="" name="text">
-            <button type="submit" class="search-button"></button>
-          </form>
-        </nav>
-      </div>
+    <header class="header">
+      <img src="Img/Logo.png" class="header__logo" alt="company logo">
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <a class="menu-link" href="#home">Home</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-link" href="#0">Medicine</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-link" href="#0">Professionals</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-link" href="#0">Contact</a>
+          </li>
+        </ul>
+        <form action="https://ya.ru/search/" class="search-form">
+          <input type="search" required class="search-form__input" placeholder="" name="text">
+          <button type="submit" class="search-form__button"></button>
+        </form>
+      </nav>
     </header>
 
-    <main class="main_form">
+    <main class="main-form">
       <div class="article">
-        <div class="title">
-          <h1 class="main_title"> Book an appointment</h1>
-          <h3 class="slogan">We take care of your health</h3>
+        <div class="article-title">
+          <h1 class="article-title__main"> Book an appointment</h1>
+          <h2 class="article-title__slogan">We take care of your health</h2>
         </div>
-        <div class="main_text">
+
+        <div class="article__text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam eligendi veniam quae nemo molestiae sapiente
           quis, dolorem, quod, qui praesentium eaque aliquid enim distinctio omnis labore rerum? Quas, tempora
           laudantium.
         </div>
 
-        <div class="article_image">
-          <div class="graf_dna"> </div>
+        <div class="article-image">
+          <div class="article-image__dna"> </div>
         </div>
+
       </div>
-      <div class="cross"> </div>
 
-      <div class="data__form">
-        <div class="data_card">
-          <div class="form-row">
-            <span class="form-hint">Name</span>
-            <input type="text" class="field">
-          </div>
-          <div class="form-row">
-            <span class="form-hint">Professional</span>
-            <input type="text" class="field">
-          </div>
-          <div class="form-row_date">
-            <span class="form-hint">Date</span>
-            <input type="text" class="field">
-          </div>
-          <div class="form-row_center">
-            <span class="form-hint">Center</span>
-            <input type="text" class="field">
-          </div>
-          <div class="form-row">
-            <span class="form-hint">Mail</span>
-            <input type="email" class="field">
-          </div>
+      <div class="cross-image"> </div>
+
+      <div class="data-form">
+        <form action="#" class="data-card">
+          <label class="form-row">
+            <span class="form-row__hint">Name</span>
+            <input type="text" class="form-row__field" required>
+          </label>
+          <label class="form-row">
+            <span class="form-row__hint">Professional</span>
+            <input type="text" class="form-row__field">
+          </label>
+          <label class="form-row-date">
+            <span class="form-row__hint">Date</span>
+            <input type="text" class="form-row__field">
+          </label>
+          <label class="form-row-center">
+            <span class="form-row__hint">Center</span>
+            <input type="text" class="form-row__field">
+          </label>
+          <label class="form-row">
+            <span class="form-row__hint">Mail</span>
+            <input type="email" class="form-row__field" required>
+          </label>
 
           <div class="form-row">
-            <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos placeat dolor quae
+            <p class="form-row__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos placeat dolor quae
               vero. Ducimus mollitia dolorem accusamus voluptate dolore at sequi perferendis optio incidunt
               reprehenderit.</p>
           </div>
-
-          <button type="submit" class="submit_button">SEND</button>
-
-        </div>
-
+          <button type="submit" class="data-card__submit-button">SEND</button>
+        </form>
       </div>
-      <div class="cross_1"> </div>
+
+      <div class="second-cross-image"> </div>
     </main>
 
   </div>
